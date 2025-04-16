@@ -1,17 +1,18 @@
 # ComfyUI AstroCorp Nodes
 
-- Llama Node: Processes the given text according to the instructions in the system prompt.
+- Instruct Node: Processes the given text according to the instructions in the system prompt.
 
-![Llama Node](./examples/llama_node.png)
+![Instruct Node](./examples/instruct_node.png)
+
+- Text Node: A node that allows you to input text or preview text content.
+
+![Text Node](./examples/text_node.png)
 
 ## Installation
 
-1. Make sure you have a Hugging Face account
-2. Request access to the model at: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-3. Login to Hugging Face CLI to get your token:
-```bash
-huggingface-cli login
-```
+1. Create a Hugging Face account if you don't have one
+2. If required, request access to the model.
+3. Generate an access token at: https://huggingface.co/settings/tokens
 4. Add this repository to your ComfyUI custom nodes directory:
 ```bash
 cd ComfyUI/custom_nodes
