@@ -4,9 +4,9 @@
 
 ![Instruct Node](./examples/instruct_node.png)
 
-- Text Node: A node that allows you to input text or preview text content.
+- Textarea Node: A node that allows you to input text or preview text content.
 
-![Text Node](./examples/text_node.png)
+![Textarea Node](./examples/textarea_node.png)
 
 ## Installation
 

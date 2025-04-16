@@ -40,5 +40,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "InstructNode": "Instruct Node"
+    "InstructNode": "Instruct"
 }
