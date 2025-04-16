@@ -1,10 +1,21 @@
 # ComfyUI AstroCorp Nodes
 
-- Instruct Node: Processes the given text according to the instructions in the system prompt.
+A collection of personal ComfyUI nodes designed to enhance and automate workflows.
+
+- [Nodes](#nodes)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Nodes
+### Instruct
+
+Processes the given text according to the instructions in the system prompt.
 
 ![Instruct Node](./examples/instruct_node.png)
 
-- Textarea Node: A node that allows you to input text or preview text content.
+### Textarea
+
+A node that allows you to input text or preview text content.
 
 ![Textarea Node](./examples/textarea_node.png)
 
