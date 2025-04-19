@@ -7,7 +7,6 @@ dependencies = ["huggingface-hub", "transformers"]
 
 [project.urls]
 Repository = "https://github.com/AstroCorp/ComfyUI-AstroCorp-Nodes"
-#  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
 PublisherId = "astrocorp"
