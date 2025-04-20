@@ -30,6 +30,9 @@ cd ComfyUI/custom_nodes
 git clone https://github.com/your-username/comfyui_astro_nodes.git
 ```
 
+> [!NOTE]  
+> ComfyUI AstroCorp Nodes now available in ComfyUI Manager.
+
 ## Usage
 
 After installation, restart ComfyUI to load the new nodes. The nodes will appear in the node menu under the "AstroCorp" category.
