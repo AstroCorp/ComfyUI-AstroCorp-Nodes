@@ -22,7 +22,7 @@ class InstructNode:
 
     RETURN_TYPES = ("STRING",)
     FUNCTION = "execute"
-    CATEGORY = "AstroCorp"
+    CATEGORY = "🚀🌍 AstroCorp 🌍🚀"
 
     def execute(self, input_text, system_role, model_id, max_new_tokens, hf_token):
         if hf_token.strip():

@@ -13,7 +13,7 @@ class TextareaNode:
     RETURN_TYPES = ("STRING",)
     OUTPUT_NODE = True
     FUNCTION = "execute"
-    CATEGORY = "AstroCorp"
+    CATEGORY = "🚀🌍 AstroCorp 🌍🚀"
 
     def execute(self, input_text="", text=""):
         output_text = input_text
