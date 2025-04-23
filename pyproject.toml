@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-astrocorp-nodes"
 description = "A collection of personal ComfyUI nodes designed to enhance and automate workflows."
-version = "1.0.0"
+version = "1.1.0"
 license = {file = "LICENSE"}
 dependencies = ["huggingface-hub", "transformers"]
 

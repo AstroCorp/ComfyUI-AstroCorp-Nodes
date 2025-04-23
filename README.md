@@ -15,9 +15,15 @@ Processes the given text according to the instructions in the system prompt.
 
 ### Textarea
 
-A node that allows you to input text or preview text content.
+A text field that allows manual text input and also previews text from other nodes.
 
 ![Textarea Node](./examples/textarea_node.png)
+
+## Merge Texts
+
+Combines two input texts into a single output text, with the option to specify a custom separator between them.
+
+![Merge Texts Node](./examples/merge_texts_node.png)
 
 ## Installation
 
