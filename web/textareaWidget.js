@@ -31,5 +31,25 @@ app.registerExtension({
 
             onExecuted?.apply(this, arguments);
         };
+
+        const serialize = nodeType.prototype.serialize;
+        nodeType.prototype.serialize = function() {
+            const data = serialize?.apply(this, arguments) || {};
+
+            if (this.textarea) {
+                data.text = this.textarea.inputEl.value;
+            }
+
+            return data;
+        };
+
+        const configure = nodeType.prototype.configure;
+        nodeType.prototype.configure = function(data) {
+            configure?.apply(this, arguments);
+
+            if (this.textarea) {
+                this.textarea.inputEl.value = data.text;
+            }
+        };
     }
 });
