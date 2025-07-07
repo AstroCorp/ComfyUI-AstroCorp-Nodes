@@ -21,7 +21,7 @@ A text field that allows manual text input and also previews text from other nod
 
 ## Merge Texts
 
-Combines different input texts into a single output text, with the option to specify a custom separator between them.
+Merge different input texts into a single output text, with the option to specify a custom separator between them.
 
 ![Merge Texts Node](./examples/merge_texts_node.png)
 
