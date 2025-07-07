@@ -64,7 +64,7 @@ app.registerExtension({
                         }
                     }
                 } else if (event === TypeSlotEvent.Disconnect) {
-                    this.removeInput(slot_idx);
+                   this.removeInput(slot_idx);
                 }
 
                 // Rastreamos cada nombre de slot para poder indexar los únicos
@@ -72,7 +72,7 @@ app.registerExtension({
                 let slot_tracker = {};
 
                 for(const slot of this.inputs) {
-                    if (slot.link === null) {
+                    if (slot.link === null && slot.name.startsWith(_PREFIX)) {
                         this.removeInput(idx);
                         continue;
                     }
