@@ -3,9 +3,7 @@ class MergeTextsNode:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "input_text_1": ("STRING", {"forceInput": True}),
-                "input_text_2": ("STRING", {"forceInput": True}),
-                "separator": ("STRING", {"default": " "}),
+                "separator": ("STRING", {"default": ", "}),
             },
             "hidden": {
                 "text_result": ("STRING", {"multiline": True}),
@@ -16,8 +14,8 @@ class MergeTextsNode:
     FUNCTION = "execute"
     CATEGORY = "🚀🌍 AstroCorp 🌍🚀"
 
-    def execute(self, input_text_1="", input_text_2="", separator=""):
-        output_text = input_text_1 + separator + input_text_2
+    def execute(self, separator="", **kwargs):
+        output_text = separator.join(kwargs.values())
 
         return {
             "ui": {
