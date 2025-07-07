@@ -56,10 +56,11 @@ app.registerExtension({
                     if (fromNode) {
                         // Aseguramos que haya un padre para el link
                         const parent_link = fromNode.outputs[link_info.origin_slot];
+                        const only_one_input = this.inputs.filter(input => input.name.startsWith(_PREFIX)).length === 1;
 
                         if (parent_link) {
                             node_slot.type = parent_link.type;
-                            node_slot.name = `${_PREFIX}_`;
+                            node_slot.name =  `${_PREFIX}_${only_one_input ? '1' : ''}`;
                         }
                     }
                 } else if (event === TypeSlotEvent.Disconnect) {
