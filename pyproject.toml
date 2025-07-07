@@ -3,7 +3,7 @@ name = "comfyui-astrocorp-nodes"
 description = "A collection of personal ComfyUI nodes designed to enhance and automate workflows."
 version = "1.2.0"
 license = {file = "LICENSE"}
-dependencies = ["deepl-cli", "huggingface-hub", "transformers"]
+dependencies = ["huggingface-hub", "transformers"]
 
 [project.urls]
 Repository = "https://github.com/AstroCorp/ComfyUI-AstroCorp-Nodes"
