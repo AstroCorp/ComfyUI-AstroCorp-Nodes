@@ -28,10 +28,7 @@ Merge different input texts into a single output text, with the option to specif
 
 ## Installation
 
-1. Create a Hugging Face account if you don't have one
-2. If required, request access to the model.
-3. Generate an access token at: https://huggingface.co/settings/tokens
-4. Add this repository to your ComfyUI custom nodes directory:
+Add this repository to your ComfyUI custom nodes directory:
 ```bash
 cd ComfyUI/custom_nodes
 git clone https://github.com/your-username/comfyui_astro_nodes.git
