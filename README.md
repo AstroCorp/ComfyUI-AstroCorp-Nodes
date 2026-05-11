@@ -7,11 +7,12 @@ A collection of personal ComfyUI nodes designed to enhance and automate workflow
 - [Usage](#usage)
 
 ## Nodes
-### Instruct
 
-Processes the given text according to the instructions in the system prompt.
+### Empty Latent Image With Rotate
 
-![Instruct Node](./examples/instruct_node.png)
+Same as ComfyUI’s Empty Latent Image, plus a button to swap width and height.
+
+![Empty Latent Image With Rotation](./examples/empty_latent_image_with_rotate_node.png)
 
 ### Textarea
 
