@@ -8,6 +8,12 @@ A collection of personal ComfyUI nodes designed to enhance and automate workflow
 
 ## Nodes
 
+### Image Result
+
+Combining the "Preview Image" and "Save Image" nodes in comfyUI.
+
+![Image Result](./examples/image_result_node.png)
+
 ### Empty Latent Image With Rotate
 
 Same as ComfyUI’s Empty Latent Image, plus a button to swap width and height.
