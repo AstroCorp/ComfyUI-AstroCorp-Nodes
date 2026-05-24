@@ -10,7 +10,7 @@ A collection of personal ComfyUI nodes designed to enhance and automate workflow
 
 ### Image Result
 
-Combining the "Preview Image" and "Save Image" nodes in comfyUI.
+Combining the "Preview Image" and "Save Image" nodes of comfyUI.
 
 ![Image Result](./examples/image_result_node.png)
 
