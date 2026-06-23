@@ -8,6 +8,12 @@ A collection of personal ComfyUI nodes designed to enhance and automate workflow
 
 ## Nodes
 
+### Load Image Clipboard
+
+Loads an image like ComfyUI’s Load Image node, with an extra button to use the clipboard image.
+
+![Load Image Clipboard](./examples/load_image_clipboard_node.png)
+
 ### Image Result
 
 Combining the "Preview Image" and "Save Image" nodes of comfyUI.

@@ -7,6 +7,7 @@ app.registerExtension({
         if (nodeData.name !== "TextareaNode") return;
 
         const onNodeCreated = nodeType.prototype.onNodeCreated;
+
         nodeType.prototype.onNodeCreated = function() {
             onNodeCreated?.apply(this, arguments);
 
@@ -22,6 +23,7 @@ app.registerExtension({
         }
 
         const onExecuted = nodeType.prototype.onExecuted;
+
         nodeType.prototype.onExecuted = function(texts) {
             const hasText = Array.isArray(texts?.string) ? texts?.string.some(text => text.length > 0) : texts?.string.length > 0;
             
@@ -33,6 +35,7 @@ app.registerExtension({
         };
 
         const serialize = nodeType.prototype.serialize;
+
         nodeType.prototype.serialize = function() {
             const data = serialize?.apply(this, arguments) || {};
 
@@ -44,6 +47,7 @@ app.registerExtension({
         };
 
         const configure = nodeType.prototype.configure;
+        
         nodeType.prototype.configure = function(data) {
             configure?.apply(this, arguments);
 
