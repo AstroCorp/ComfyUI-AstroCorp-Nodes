@@ -6,6 +6,7 @@ app.registerExtension({
         if (nodeData.name !== "EmptyLatentImageWithRotate") return;
 
         const onNodeCreated = nodeType.prototype.onNodeCreated;
+
         nodeType.prototype.onNodeCreated = function () {
             onNodeCreated?.apply(this, arguments);
 
@@ -35,7 +36,6 @@ app.registerExtension({
                     null,
                     swapWh
                 );
-
                 const widgets = this.widgets;
                 const batchIdx = widgets?.findIndex((x) => x.name === "batch_size") ?? -1;
                 const btn =

@@ -21,6 +21,7 @@ app.registerExtension({
         if (nodeData.name !== "MergeTextsNode") return;
 
         const onNodeCreated = nodeType.prototype.onNodeCreated;
+
         nodeType.prototype.onNodeCreated = function() {
             onNodeCreated?.apply(this, arguments);
 
@@ -44,7 +45,8 @@ app.registerExtension({
             }
         }
 
-        const onConnectionsChange = nodeType.prototype.onConnectionsChange
+        const onConnectionsChange = nodeType.prototype.onConnectionsChange;
+
         nodeType.prototype.onConnectionsChange = function (slotType, slot_idx, event, link_info, node_slot) {
             const me = onConnectionsChange?.apply(this, arguments);
 
@@ -111,6 +113,7 @@ app.registerExtension({
         }
 
         const onExecuted = nodeType.prototype.onExecuted;
+        
         nodeType.prototype.onExecuted = function(texts) {
             const hasText = Array.isArray(texts?.string) ? texts?.string.some(text => text.length > 0) : texts?.string.length > 0;
             

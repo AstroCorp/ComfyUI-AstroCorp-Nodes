@@ -4,7 +4,6 @@ import comfy.model_management
 
 MAX_RESOLUTION = 16384
 
-
 class EmptyLatentImageWithRotate:
     @classmethod
     def INPUT_TYPES(cls):
