@@ -8,6 +8,12 @@ A collection of personal ComfyUI nodes designed to enhance and automate workflow
 
 ## Nodes
 
+### Load Upscale Model+ / Upscale Image (using Model)
+
+Same as ComfyUI’s upscaler, using files from `models/upscale_models`, plus support for ONNX models. The first ONNX run compiles a TensorRT engine under `models/tensorrt/upscaler`.
+
+![Upscale nodes](./examples/upscaler_nodes.png)
+
 ### Load Image Clipboard
 
 Loads an image like ComfyUI’s Load Image node, with an extra button to use the clipboard image.
@@ -19,6 +25,12 @@ Loads an image like ComfyUI’s Load Image node, with an extra button to use the
 Combining the "Preview Image" and "Save Image" nodes of comfyUI.
 
 ![Image Result](./examples/image_result_node.png)
+
+### Video Result
+
+Same as ComfyUI’s Save Video, plus a toggle to preview without saving.
+
+![Video Result](./examples/video_result_node.png)
 
 ### Empty Latent Image With Rotate
 
@@ -45,6 +57,8 @@ Add this repository to your ComfyUI custom nodes directory:
 cd ComfyUI/custom_nodes
 git clone https://github.com/your-username/comfyui_astro_nodes.git
 ```
+
+ONNX upscaling uses TensorRT when it is installed in the ComfyUI Python environment. If TensorRT is missing, install `onnxruntime-gpu` (or `onnxruntime`) as a fallback.
 
 > [!NOTE]  
 > ComfyUI AstroCorp Nodes now available in ComfyUI Manager.
