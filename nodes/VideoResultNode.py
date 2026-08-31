@@ -25,8 +25,17 @@ class VideoResultNode(SaveVideo):
         return schema
 
     @classmethod
-    def execute(cls, video, filename_prefix, format, codec, save=False) -> io.NodeOutput:
+    def execute(cls, video, filename_prefix, format, codec=None, save=False) -> io.NodeOutput:
+        if isinstance(format, dict):
+            format_name = format["format"]
+            codec = format.get("codec") or codec
+        else:
+            format_name = format
+        if codec is None:
+            codec = {"codec": "auto"}
         codec_name = codec["codec"]
+        if format_name == "auto":
+            format_name = "webm" if codec_name == "av1" else "mp4"
         encoding = codec.get("encoding") or {}
         if save:
             output_dir = folder_paths.get_output_directory()
@@ -49,11 +58,11 @@ class VideoResultNode(SaveVideo):
                 metadata["prompt"] = cls.hidden.prompt
             if metadata:
                 saved_metadata = metadata
-        file = f"{filename}_{counter:05}_.{Types.VideoContainer.get_extension(format)}"
+        file = f"{filename}_{counter:05}_.{Types.VideoContainer.get_extension(format_name)}"
         video.save_to(
             os.path.join(full_output_folder, file),
-            format=Types.VideoContainer(format),
-            codec=codec_name,
+            format=Types.VideoContainer(format_name),
+            codec=Types.VideoCodec(codec_name),
             metadata=saved_metadata,
             crf=encoding.get("crf"),
         )

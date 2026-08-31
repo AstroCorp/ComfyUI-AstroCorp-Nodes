@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-astrocorp-nodes"
 description = "A collection of personal ComfyUI nodes designed to enhance and automate workflows."
-version = "1.6.0"
+version = "1.6.1"
 license = {file = "LICENSE"}
 dependencies = []
 
