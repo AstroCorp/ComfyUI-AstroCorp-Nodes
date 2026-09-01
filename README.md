@@ -28,7 +28,7 @@ Combining the "Preview Image" and "Save Image" nodes of comfyUI.
 
 ### Video Result
 
-Same as ComfyUI’s Save Video, plus a toggle to preview without saving.
+Same as ComfyUI’s Save Video, plus a toggle to preview without saving and a slider to set the preview volume.
 
 ![Video Result](./examples/video_result_node.png)
 
