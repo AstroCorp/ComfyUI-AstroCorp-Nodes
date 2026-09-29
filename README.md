@@ -55,7 +55,7 @@ Merge different input texts into a single output text, with the option to specif
 Add this repository to your ComfyUI custom nodes directory:
 ```bash
 cd ComfyUI/custom_nodes
-git clone https://github.com/your-username/comfyui_astro_nodes.git
+git clone git@github.com:AstroCorp/ComfyUI-AstroCorp-Nodes.git
 ```
 
 ONNX upscaling uses TensorRT when it is installed in the ComfyUI Python environment. If TensorRT is missing, install `onnxruntime-gpu` (or `onnxruntime`) as a fallback.
