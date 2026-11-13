@@ -3,7 +3,7 @@ import torch
 from comfy import model_management
 import comfy.utils
 
-from .upscale_common import CATEGORY, ENGINE_MAX_DIM, OnnxUpscaleModel
+from .utils.upscale_common import CATEGORY, ENGINE_MAX_DIM, OnnxUpscaleModel
 
 
 class ImageUpscaleWithModelNode:
