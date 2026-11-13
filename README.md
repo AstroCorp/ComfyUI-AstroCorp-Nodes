@@ -32,6 +32,10 @@ Same as ComfyUI’s Save Video, plus a toggle to preview without saving and a sl
 
 ![Video Result](./examples/video_result_node.png)
 
+### Video To GIF/APNG
+
+Converts a video to GIF or APNG in the best possible quality.
+
 ### Empty Latent Image With Rotate
 
 Same as ComfyUI’s Empty Latent Image, plus a button to swap width and height.
