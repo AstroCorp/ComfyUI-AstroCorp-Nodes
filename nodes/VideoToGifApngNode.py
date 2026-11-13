@@ -12,7 +12,7 @@ from PIL import Image
 mimetypes.add_type("image/apng", ".apng")
 
 
-class VideoToGifNode(io.ComfyNode):
+class VideoToGifApngNode(io.ComfyNode):
     @classmethod
     def define_schema(cls):
         return io.Schema(
@@ -113,7 +113,7 @@ class VideoToGifNode(io.ComfyNode):
 
 
 NODE_CLASS_MAPPINGS = {
-    "VideoToGifNode": VideoToGifNode,
+    "VideoToGifNode": VideoToGifApngNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {

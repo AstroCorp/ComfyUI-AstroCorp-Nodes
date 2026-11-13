@@ -2,7 +2,7 @@ import os
 
 import folder_paths
 
-from .upscale_common import (
+from .utils.upscale_common import (
     CATEGORY,
     ONNX_EXT,
     UPSCALE_FOLDER,
