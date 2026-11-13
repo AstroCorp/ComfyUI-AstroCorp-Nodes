@@ -36,6 +36,10 @@ Same as ComfyUI’s Save Video, plus a toggle to preview without saving and a sl
 
 Converts a video to GIF or APNG in the best possible quality.
 
+### Text File Editor
+
+Opens a file picker to choose a `.txt` file and lets you edit it in the node. Changes are saved back to that file 2 seconds after you stop typing, with undo/redo for up to 10 steps.
+
 ### Empty Latent Image With Rotate
 
 Same as ComfyUI’s Empty Latent Image, plus a button to swap width and height.
